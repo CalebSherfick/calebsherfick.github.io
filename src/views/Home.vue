@@ -5,18 +5,13 @@
       :class="$mq | mq({xs: 'navbar navbar-expand-lg navi row', sm: 'navbar navbar-expand-lg navi row', md: 'navbar sticky-top navbar-expand-lg navi row', lg: 'navbar sticky-top navbar-expand-lg navi row'})">
       <div class="col-12">
         <div class="row">
-
-
           <a :class="$mq | mq({xs: 'navbar-brand nav-text col-12', sm: 'navbar-brand nav-text col-12', md: 'navbar-brand nav-text col-2', lg: 'navbar-brand nav-text col-2'})"
             href="#">Caleb Sherfick</a>
-
-
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text offset-5 col-1', lg: 'nav-item nav-link active nav-text offset-5 col-1'})"
             href="#">About
             Me</a>
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
             href="#skills">Skills</a>
-
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
             href="#">Portfolio</a>
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
@@ -43,6 +38,49 @@
         </div>
       </div>
     </header>
+
+    <section class="row about">
+      <div class="col-12">
+        <div class="about-color">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 flex-column text-center py-4">
+              <h3 class="pb-1">ABOUT</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <p>I graduated from Boise State University with a Human Biology degree. In the midst of PA school
+                interviews, I realized I
+                wasn't as passionate about the healthcare industry and decided I needed a new challenge. This
+                realization fueled the
+                beginning of my journey in the field of Software Development. I started to study coding on my own and
+                taught myself HTML
+                and CSS using the many open source resources online. I quickly fell in love with coding and wanted to
+                enhance my skills
+                at a faster pace than I would be able to accomplish on my own. That is when I decided to take the leap
+                quit my job in
+                order to enroll full time in CodeWorks where I have learned all the skills necessary to become a
+                Full-Stack Software
+                Developer, and have gotten one step closer to having my dream job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row skills" id="skills">
+      <div class="col-12 skills-bg">
+        <div class="row align-items-center justify-content-center pt-4">
+          <div class="col-12 text-center">
+            <h3>SKILLS</h3>
+          </div>
+        </div>
+        <div class="row">
+          <!-- INSERT LANGUAGE IMAGE MOEDEL HERE -->
+        </div>
+      </div>
+    </section>
+
 
 
 
@@ -110,6 +148,12 @@
 
   .btn-text {
     color: #f4fffd;
+  }
+
+  .about {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 32px;
   }
 
   .about-color {
