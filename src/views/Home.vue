@@ -1,25 +1,44 @@
 <template>
   <div class="container-fluid">
 
-    <nav class="navbar sticky-top navbar-expand-lg navi">
-      <a class="navbar-brand nav-text" href="#">Caleb Sherfick</a>
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active nav-text" href="#">About Me</a>
-        <a class="nav-item nav-link active nav-text" href="#skills">Skills</a>
-        <a class="nav-item nav-link active nav-text" href="#">Experience</a>
-        <a class="nav-item nav-link active nav-text" href="#">Portfolio</a>
-        <a class="nav-item nav-link active nav-text" href="#">Contact</a>
+    <nav
+      :class="$mq | mq({xs: 'navbar navbar-expand-lg navi row', sm: 'navbar navbar-expand-lg navi row', md: 'navbar sticky-top navbar-expand-lg navi row', lg: 'navbar sticky-top navbar-expand-lg navi row'})">
+      <div class="col-12">
+        <div class="row">
+
+
+          <a :class="$mq | mq({xs: 'navbar-brand nav-text col-12', sm: 'navbar-brand nav-text col-12', md: 'navbar-brand nav-text col-2', lg: 'navbar-brand nav-text col-2'})"
+            href="#">Caleb Sherfick</a>
+
+
+          <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text offset-5 col-1', lg: 'nav-item nav-link active nav-text offset-5 col-1'})"
+            href="#">About
+            Me</a>
+          <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
+            href="#skills">Skills</a>
+
+          <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
+            href="#">Portfolio</a>
+          <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
+            href="#">Contact</a>
+        </div>
       </div>
     </nav>
 
-    <header class="row photo-on-head">
-      <div class="col-sm-12 col-md-12">
-        <div class="jumbotron head-photo my-0">
-          <div class="photo-letters">
-            <h1 class="display-4">Caleb Sherfick</h1>
-            <p class="lead">Junior Software Developer</p>
+    <header class="jumbotron head-photo row">
+      <div class="col-12">
+        <div class="row justify-content-start">
+          <h1 :class="$mq | mq({xs: 'col', sm: 'col', md: 'col', lg: 'col-4 d-flex justify-content-start'})">Caleb
+            Sherfick</h1>
+        </div>
+        <div class="row justify-content-start">
+          <p :class="$mq | mq({xs: 'col', sm: 'col', md: 'col', lg: 'col-4 d-flex justify-content-start'})">Full Stack
+            Software Developer</p>
+        </div>
+        <div class="row justify-content-start">
+          <div :class="$mq | mq({xs: 'col', sm: 'col', md: 'col-4', lg: 'col-3 d-flex justify-content-start'})">
+            <a class="btn btn-lg btn-color nav-text shadow" href="#" role="button">View Work</a>
           </div>
-          <a class="btn btn-lg btn-color nav-text shadow" href="#" role="button">View Work</a>
         </div>
       </div>
     </header>
@@ -27,7 +46,7 @@
 
 
 
-
+    <!-- :class="$mq | mq({xs: '', sm: '', md: '', lg: ''})" -->
 
 
   </div>
@@ -53,7 +72,7 @@
   .head-photo {
     background-image: url("../assets/federica-galli-449563-unsplash.jpg");
     background-size: 100%;
-    width: 100%;
+    /* width: 100%; */
     background-position: center 95%;
     padding: 20vh;
     border-radius: 0px;
