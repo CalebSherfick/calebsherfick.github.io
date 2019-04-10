@@ -25,7 +25,8 @@
       </div>
     </nav>
 
-    <header class="jumbotron head-photo row">
+    <header
+      :class="$mq | mq({xs: 'jumbotron head-photo-mobile row', sm: 'jumbotron head-photo-mobile row', md: 'jumbotron head-photo row', lg: 'jumbotron head-photo row'})">
       <div class="col-12">
         <div class="row justify-content-start">
           <h1 :class="$mq | mq({xs: 'col', sm: 'col', md: 'col', lg: 'col-4 d-flex justify-content-start'})">Caleb
@@ -37,7 +38,7 @@
         </div>
         <div class="row justify-content-start">
           <div :class="$mq | mq({xs: 'col', sm: 'col', md: 'col-4', lg: 'col-3 d-flex justify-content-start'})">
-            <a class="btn btn-lg btn-color nav-text shadow" href="#" role="button">View Work</a>
+            <a class="btn btn-lg btn-color btn-text shadow" href="#" role="button">View Work</a>
           </div>
         </div>
       </div>
@@ -69,12 +70,33 @@
     color: #f4fffd;
   }
 
+  .nav-text:hover {
+    color: white;
+    text-shadow: 0px 0px 2px white;
+  }
+
+  .nav-text:active {
+    color: rgb(187, 187, 187);
+    text-shadow: 0px 0px 0px black;
+  }
+
   .head-photo {
     background-image: url("../assets/federica-galli-449563-unsplash.jpg");
     background-size: 100%;
     /* width: 100%; */
     background-position: center 95%;
+    background-repeat: no-repeat;
     padding: 20vh;
+    border-radius: 0px;
+  }
+
+  .head-photo-mobile {
+    background-image: url("../assets/federica-galli-449563-unsplash.jpg");
+    background-size: 200%;
+    /* width: 100%; */
+    height: 50vh;
+    background-position: center 95%;
+    background-repeat: no-repeat;
     border-radius: 0px;
   }
 
@@ -84,6 +106,10 @@
 
   .btn-color {
     background-color: #67747b;
+  }
+
+  .btn-text {
+    color: #f4fffd;
   }
 
   .about-color {
