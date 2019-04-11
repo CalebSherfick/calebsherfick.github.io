@@ -77,6 +77,7 @@
         </div>
         <div class="row">
           <!-- INSERT LANGUAGE IMAGE MOEDEL HERE -->
+          <skill v-for="skill in skills" :skill="skill"></skill>
         </div>
       </div>
     </section>
@@ -92,9 +93,16 @@
 </template>
 
 <script>
+  import Skill from "@/components/Skill.vue"
   export default {
     name: 'home',
+    computed: {
+      skills() {
+        return this.$store.state.skills;
+      }
+    },
     components: {
+      Skill
     }
   }
 </script>
