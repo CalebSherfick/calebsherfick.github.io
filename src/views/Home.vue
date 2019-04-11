@@ -93,13 +93,37 @@
 </template>
 
 <script>
+  import mySql from '@/assets/1200px-MySQL.svg.png'
+  import bootstrap from '@/assets/bootstrap-logo-vector-png-bootstrap-logo-vector-300.png'
+  import cs from '@/assets/c-logo.png'
+  import css from '@/assets/css3-logo-png-transparent.png'
+  import git from '@/assets/Git-Logo-2Color.png'
+  import html from '@/assets/HTML5_Logo_512.png'
+  import js from '@/assets/logo-javascript-png-javascript-tutorials-400.png'
+  import mongoDb from '@/assets/logo-mongodb-png-mongodb-is-one-of-several-database-types-to-arise-in-the-mid-2000s-under-the-nosql-banner-instead-of-using-tables-and-rows-as-in-relational-databases-300.png'
+  import vue from '@/assets/logo.png'
+  import node from '@/assets/nodejs-new-pantone-black.png'
   import Skill from "@/components/Skill.vue"
+
   export default {
     name: 'home',
-    computed: {
-      skills() {
-        return this.$store.state.skills;
+    data() {
+      return {
+        skills: [
+          { name: mySql, id: "mySql" },
+          { name: bootstrap, id: "bootstrap" },
+          { name: cs, id: "cs" },
+          { name: css, id: "css" },
+          { name: git, id: "git" },
+          { name: html, id: "html" },
+          { name: js, id: "js" },
+          { name: mongoDb, id: "mongoDb" },
+          { name: vue, id: "vue" },
+          { name: node, id: "node" }
+        ]
       }
+    },
+    computed: {
     },
     components: {
       Skill
