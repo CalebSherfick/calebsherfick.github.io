@@ -36,7 +36,7 @@
         </div>
         <div class="row justify-content-start">
           <div :class="$mq | mq({xs: 'col', sm: 'col', md: 'col-4', lg: 'col-3 d-flex justify-content-start'})">
-            <a class="btn btn-lg btn-color btn-text shadow" href="#portfolio" role="button">View Work</a>
+            <a class="btn button btn-lg btn-text" href="#portfolio" role="button">View Work</a>
           </div>
         </div>
       </div>
@@ -216,9 +216,42 @@
     text-shadow: 0px 0px 2px white;
   }
 
+  .nav-text:hover {
+    color: white;
+    text-shadow: 0px 0px 2px white;
+  }
+
   .nav-text:active {
     color: rgb(187, 187, 187);
     text-shadow: 0px 0px 0px black;
+  }
+
+  .button {
+    background-color: #67747b;
+    border: none;
+    border-radius: 50px;
+    color: #FFF;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .button:hover {
+    background-color: #70848f;
+  }
+
+  .button:active {
+    background-color: #576770;
+  }
+
+  .btn-text {
+    color: #f4fffd;
+  }
+
+  .btn-text:hover {
+    color: #f4fffd;
   }
 
   .head-photo {
@@ -244,14 +277,6 @@
   /* .photo-letters {  
   text-shadow: -1px 1px 2px;
 } */
-
-  .btn-color {
-    background-color: #67747b;
-  }
-
-  .btn-text {
-    color: #f4fffd;
-  }
 
   .about {
     margin-left: 0px;
