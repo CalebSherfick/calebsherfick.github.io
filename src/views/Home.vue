@@ -100,7 +100,7 @@
     </section>
 
     <footer class="row contact" id="contact">
-      <div class="col-12 px-0 pt-3">
+      <div class="col-12 pt-1 mt-3 foot-color">
         <div class="foot-color">
           <div class="row align-items-center justify-content-center">
             <div
@@ -199,6 +199,10 @@
 </script>
 
 <style>
+  /* * {
+    outline: 1px red solid;
+  } */
+
   .navi {
     background-color: #343534;
   }
