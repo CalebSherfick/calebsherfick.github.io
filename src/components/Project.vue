@@ -13,7 +13,7 @@
         </div>
         <div class="col-12 text-div d-flex justify-content-center align-items-start">
           <div :class="$mq | mq({xs: 'text-mobile', sm: 'text-mobile', md: 'text desc-text', lg: 'text desc-text'})">
-            {{project.desc}}}
+            {{project.desc}}
           </div>
         </div>
       </div>
