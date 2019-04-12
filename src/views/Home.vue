@@ -76,8 +76,22 @@
           </div>
         </div>
         <div class="row">
-          <!-- INSERT LANGUAGE IMAGE MOEDEL HERE -->
+          <!-- INSERT LANGUAGE IMAGE MODEL HERE -->
           <skill v-for="skill in skills" :skill="skill"></skill>
+        </div>
+      </div>
+    </section>
+
+    <section class="row portfolio">
+      <div class="col-12 portfolio-bg">
+        <div class="row align-items-center justify-content-center pt-4">
+          <div class="col-12 text-center">
+            <h3>PORTFOLIO</h3>
+          </div>
+        </div>
+        <div class="row">
+          <!-- INSERT PROJECT IMAGE MOEDEL HERE -->
+          <project v-for="project in projects" :project="project"></project>
         </div>
       </div>
     </section>
@@ -103,30 +117,46 @@
   import mongoDb from '@/assets/logo-mongodb-png-mongodb-is-one-of-several-database-types-to-arise-in-the-mid-2000s-under-the-nosql-banner-instead-of-using-tables-and-rows-as-in-relational-databases-300.png'
   import vue from '@/assets/logo.png'
   import node from '@/assets/nodejs-new-pantone-black.png'
+
+  import inspire from '@/assets/Inspire.png'
+  import bugReport from '@/assets/BugReport.png'
+  import billboards from '@/assets/Billboards.png'
+  import poplarWide from '@/assets/PoplarWide.jpg'
+  import poplar from '@/assets/Poplar.jpg'
+
   import Skill from "@/components/Skill.vue"
+  import Project from "@/components/Project.vue"
 
   export default {
     name: 'home',
     data() {
       return {
         skills: [
-          { name: mySql, id: "mySql" },
-          { name: bootstrap, id: "bootstrap" },
-          { name: cs, id: "cs" },
-          { name: css, id: "css" },
-          { name: git, id: "git" },
-          { name: html, id: "html" },
-          { name: js, id: "js" },
-          { name: mongoDb, id: "mongoDb" },
-          { name: vue, id: "vue" },
-          { name: node, id: "node" }
+          { url: mySql, id: "mySql" },
+          { url: bootstrap, id: "bootstrap" },
+          { url: cs, id: "cs" },
+          { url: css, id: "css" },
+          { url: git, id: "git" },
+          { url: html, id: "html" },
+          { url: js, id: "js" },
+          { url: mongoDb, id: "mongoDb" },
+          { url: vue, id: "vue" },
+          { url: node, id: "node" }
+        ],
+        projects: [
+          { url: inspire, id: "inspire", title: "Inspire", desc: "Vanilla JavaScript homepage application. Includes a todo list and implements multiple APIs to draw in weather, photo, and a quote per page load." },
+          { url: bugReport, id: "bugReport", title: "Bug Report", desc: "" },
+          { url: billboards, id: "billboards", title: "Billboards", desc: "" },
+          { url: poplarWide, id: "poplarWide", title: "Poplar", desc: "" },
+          { url: poplar, id: "poplar", title: "Poplar", desc: "" },
         ]
       }
     },
     computed: {
     },
     components: {
-      Skill
+      Skill,
+      Project
     }
   }
 </script>
@@ -196,10 +226,6 @@
   .skills-bg {
     background-color: #dde0dc;
     color: #343534;
-  }
-
-  .skill-img {
-    max-width: 20vh;
   }
 
   .xp-background {
