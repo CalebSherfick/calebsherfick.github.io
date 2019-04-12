@@ -6,16 +6,19 @@
       <div class="col-12">
         <div class="row">
           <a :class="$mq | mq({xs: 'navbar-brand nav-text col-12', sm: 'navbar-brand nav-text col-12', md: 'navbar-brand nav-text col-2', lg: 'navbar-brand nav-text col-2'})"
-            href="#">Caleb Sherfick</a>
+            href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
+            target="_blank">Caleb
+            Sherfick
+            Resume</a>
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text offset-5 col-1', lg: 'nav-item nav-link active nav-text offset-5 col-1'})"
-            href="#">About
+            href="#about">About
             Me</a>
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
             href="#skills">Skills</a>
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
-            href="#">Portfolio</a>
+            href="#portfolio">Portfolio</a>
           <a :class="$mq | mq({xs: 'nav-item nav-link active nav-text col-6', sm: 'nav-item nav-link active nav-text col-6', md: 'nav-item nav-link active nav-text col-1', lg: 'nav-item nav-link active nav-text col-1'})"
-            href="#">Contact</a>
+            href="#contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -33,13 +36,13 @@
         </div>
         <div class="row justify-content-start">
           <div :class="$mq | mq({xs: 'col', sm: 'col', md: 'col-4', lg: 'col-3 d-flex justify-content-start'})">
-            <a class="btn btn-lg btn-color btn-text shadow" href="#" role="button">View Work</a>
+            <a class="btn btn-lg btn-color btn-text shadow" href="#portfolio" role="button">View Work</a>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="row about">
+    <section class="row about" id="about">
       <div class="col-12">
         <div class="about-color">
           <div class="row align-items-center justify-content-center">
@@ -82,21 +85,55 @@
       </div>
     </section>
 
-    <section class="row portfolio">
+    <section class="row portfolio" id="portfolio">
       <div class="col-12 portfolio-bg">
         <div class="row align-items-center justify-content-center pt-4">
           <div class="col-12 text-center">
             <h3>PORTFOLIO</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center  ">
           <!-- INSERT PROJECT IMAGE MOEDEL HERE -->
           <project v-for="project in projects" :project="project"></project>
         </div>
       </div>
     </section>
 
-
+    <footer class="row contact" id="contact">
+      <div class="col-12 px-0 pt-3">
+        <div class="foot-color">
+          <div class="row align-items-center justify-content-center">
+            <div
+              :class="$mq | mq({xs: 'col-12 text-center', sm: 'col-12 text-center', md: 'col-3 text-center', lg: 'col-3 text-center'})">
+              <i
+                :class="$mq | mq({xs: 'fas fa-phone fa-2x pt-4', sm: 'fas fa-phone fa-2x pt-4', md: 'fas fa-phone fa-2x pt-2', lg: 'fas fa-phone fa-2x pt-2'})"></i>
+              <p
+                :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
+                208.219.7635</p>
+            </div>
+            <div
+              :class="$mq | mq({xs: 'col-12 text-center', sm: 'col-12 text-center', md: 'col-3 text-center', lg: 'col-3 text-center'})">
+              <i
+                :class="$mq | mq({xs: 'fas fa-envelope fa-2x pt-1', sm: 'fas fa-envelope fa-2x pt-1', md: 'fas fa-envelope fa-2x pt-2', lg: 'fas fa-envelope fa-2x pt-2'})"></i>
+              <p
+                :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
+                calebsherfick@gmail.com
+              </p>
+            </div>
+            <div
+              :class="$mq | mq({xs: 'col-12 text-center', sm: 'col-12 text-center', md: 'col-3 text-center', lg: 'col-3 text-center'})">
+              <i :class="$mq | mq({xs: 'fas fa-file-alt fa-2x pt-1', sm: 'fas fa-file-alt fa-2x pt-1', md: 'fas fa-file-alt fa-2x pt-2 resume', lg: 'fas fa-file-alt fa-2x pt-2 resume'})"
+                href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
+                target="_blank"></i>
+              <p :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1 resume', lg: 'footer-words my-0 py-1 resume'})"
+                href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
+                target="_blank">
+                Resume</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -144,11 +181,11 @@
           { url: node, id: "node" }
         ],
         projects: [
-          { url: inspire, id: "inspire", title: "Inspire", desc: "Vanilla JavaScript homepage application. Includes a todo list and implements multiple APIs to draw in weather, photo, and a quote per page load." },
-          { url: bugReport, id: "bugReport", title: "Bug Report", desc: "" },
-          { url: billboards, id: "billboards", title: "Billboards", desc: "" },
-          { url: poplarWide, id: "poplarWide", title: "Poplar", desc: "" },
-          { url: poplar, id: "poplar", title: "Poplar", desc: "" },
+          { url: inspire, id: "inspire", title: "Inspire", link: "https://calebsherfick.github.io/inspire/", desc: "Vanilla JavaScript homepage application. Includes a todo list and implements multiple APIs to draw in weather, photo, and a quote per page load." },
+          { url: bugReport, id: "bugReport", title: "Bug Report", link: "https://calebsherfick.github.io/bug-report/", desc: "Created using Vue.js allowing users to report bugs, view details, post/flag comments, and close bugs." },
+          { url: billboards, id: "billboards", title: "Billboards", link: "https://lnkd.in/eMUcpjK", desc: "(TEST ACCOUNT: EMAIL= test@test.com | PASSWORD= test123) Full Stack application, which allows users to get organized by adding lists to boards. Users are able to drag and drop tasks to different lists on the board. Incorporates user authentication, allowing users to sign in for private boards." },
+          { url: poplarWide, id: "poplarWide", title: "Poplar", link: "", desc: "(COMING SOON, CURRENTLY UNHOSTED) Full Stack polling application which allows users to vote on posts and express their opinion based on this/that and yes/no questions. Incorporates sockets to provide a unique chatroom for every post, as well as a photo cropping/ uploading tool and user authentication." },
+          // { url: poplar, id: "poplar", title: "Poplar", link: "", desc: "(COMING SOON, CURRENTLY UNHOSTED) Full Stack polling application which allows users to vote on posts and express their opinion based on this/that and yes/no questions. Incorporates sockets to provide a unique chatroom for every post, as well as a photo cropping/ uploading tool and user authentication." },
         ]
       }
     },
@@ -228,6 +265,10 @@
     color: #343534;
   }
 
+  .skill-img {
+    max-width: 20vh;
+  }
+
   .xp-background {
     background-color: #f4fffd;
     color: #475841
@@ -236,6 +277,14 @@
   .foot-color {
     background-color: #2d3142;
     color: #f4fffd;
+  }
+
+  .footer-words {
+    font-size: 1.3em;
+  }
+
+  .resume:hover {
+    cursor: pointer;
   }
 
   .project-text {
