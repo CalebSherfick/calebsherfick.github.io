@@ -54,17 +54,17 @@
             <div class="col-10">
               <p>I graduated from Boise State University with a Human Biology degree. In the midst of PA school
                 interviews, I realized I
-                wasn't as passionate about the healthcare industry and decided I needed a new challenge. This
+                wasn't passionate about the healthcare industry anymore and decided I needed a new challenge. This
                 realization fueled the
                 beginning of my journey in the field of Software Development. I started to study coding on my own and
                 taught myself HTML
                 and CSS using the many open source resources online. I quickly fell in love with coding and wanted to
                 enhance my skills
-                at a faster pace than I would be able to accomplish on my own. That is when I decided to take the leap
-                quit my job in
-                order to enroll full time in CodeWorks where I have learned all the skills necessary to become a
-                Full-Stack Software
-                Developer, and have gotten one step closer to having my dream job.</p>
+                at a faster pace than I would be able to accomplish on my own. That is when I decided to quit my job to
+                enroll in CodeWorks, where I have learned all the skills necessary to become a
+                Full Stack Software
+                Developer. With my studies at CodeWorks complete, I am now looking for work as a Full Stack Software
+                Developer.</p>
             </div>
           </div>
         </div>
@@ -103,33 +103,32 @@
       <div class="col-12 pt-1 mt-3 foot-color">
         <div class="foot-color">
           <div class="row align-items-center justify-content-center">
-            <div
-              :class="$mq | mq({xs: 'col-12 text-center', sm: 'col-12 text-center', md: 'col-3 text-center', lg: 'col-3 text-center'})">
+            <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
+              href="tel:2082197635" target="_blank">
               <i
                 :class="$mq | mq({xs: 'fas fa-phone fa-2x pt-4', sm: 'fas fa-phone fa-2x pt-4', md: 'fas fa-phone fa-2x pt-2', lg: 'fas fa-phone fa-2x pt-2'})"></i>
               <p
                 :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
                 208.219.7635</p>
-            </div>
-            <div
-              :class="$mq | mq({xs: 'col-12 text-center', sm: 'col-12 text-center', md: 'col-3 text-center', lg: 'col-3 text-center'})">
+            </a>
+            <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
+              href="mailto:calebsherfick@gmail.com" target="_blank">
               <i
                 :class="$mq | mq({xs: 'fas fa-envelope fa-2x pt-1', sm: 'fas fa-envelope fa-2x pt-1', md: 'fas fa-envelope fa-2x pt-2', lg: 'fas fa-envelope fa-2x pt-2'})"></i>
               <p
                 :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
                 calebsherfick@gmail.com
               </p>
-            </div>
-            <div
-              :class="$mq | mq({xs: 'col-12 text-center', sm: 'col-12 text-center', md: 'col-3 text-center', lg: 'col-3 text-center'})">
-              <i :class="$mq | mq({xs: 'fas fa-file-alt fa-2x pt-1', sm: 'fas fa-file-alt fa-2x pt-1', md: 'fas fa-file-alt fa-2x pt-2 resume', lg: 'fas fa-file-alt fa-2x pt-2 resume'})"
-                href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
-                target="_blank"></i>
-              <p :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1 resume', lg: 'footer-words my-0 py-1 resume'})"
-                href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
-                target="_blank">
+            </a>
+            <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
+              href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
+              target="_blank">
+              <i
+                :class="$mq | mq({xs: 'fas fa-file-alt fa-2x pt-1', sm: 'fas fa-file-alt fa-2x pt-1', md: 'fas fa-file-alt fa-2x pt-2', lg: 'fas fa-file-alt fa-2x pt-2'})"></i>
+              <p
+                :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
                 Resume</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -305,15 +304,10 @@
 
   .foot-color {
     background-color: #2d3142;
-    color: #f4fffd;
   }
 
   .footer-words {
     font-size: 1.3em;
-  }
-
-  .resume:hover {
-    cursor: pointer;
   }
 
   .project-text {
