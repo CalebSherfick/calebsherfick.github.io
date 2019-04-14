@@ -313,41 +313,52 @@
 
   #mySql {
     max-width: 17vh;
+    min-width: 17vh;
+
   }
 
   #bootstrap {
+    max-width: 20vh;
     max-width: 20vh;
   }
 
   #cs {
     max-width: 9vh;
+    min-width: 9vh;
   }
 
   #css {
     max-width: 12vh;
+    min-width: 12vh;
   }
 
   #git {
     max-width: 15vh;
+    min-width: 15vh;
   }
 
   #html {
     max-width: 10vh;
+    min-width: 10vh;
   }
 
   #js {
     max-width: 11vh;
+    min-width: 11vh;
   }
 
   #mongoDb {
     max-width: 23vh;
+    min-width: 23vh;
   }
 
   #vue {
     max-width: 10vh;
+    min-width: 10vh;
   }
 
   #node {
     max-width: 15vh;
+    min-width: 15vh;
   }
 </style>
