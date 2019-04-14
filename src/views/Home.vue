@@ -72,13 +72,13 @@
     </section>
 
     <section class="row skills" id="skills">
-      <div class="col-12 skills-bg">
-        <div class="row align-items-center justify-content-center pt-4">
+      <div class="col-12 skills-bg pb-4">
+        <div class="row align-items-center justify-content-center pt-3">
           <div class="col-12 text-center">
             <h3>SKILLS</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <!-- INSERT LANGUAGE IMAGE MODEL HERE -->
           <skill v-for="skill in skills" :skill="skill"></skill>
         </div>
@@ -102,7 +102,7 @@
     <footer class="row contact" id="contact">
       <div class="col-12 pt-1 mt-3 foot-color">
         <div class="foot-color">
-          <div class="row align-items-center justify-content-center">
+          <div class="row align-items-center justify-content-center pb-1">
             <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
               href="tel:2082197635" target="_blank">
               <i
@@ -293,10 +293,6 @@
     color: #343534;
   }
 
-  .skill-img {
-    max-width: 20vh;
-  }
-
   .xp-background {
     background-color: #f4fffd;
     color: #475841
@@ -313,5 +309,45 @@
   .project-text {
     color: #f4fffd;
     text-shadow: -1px 1px 2px;
+  }
+
+  #mySql {
+    max-width: 17vh;
+  }
+
+  #bootstrap {
+    max-width: 20vh;
+  }
+
+  #cs {
+    max-width: 9vh;
+  }
+
+  #css {
+    max-width: 12vh;
+  }
+
+  #git {
+    max-width: 15vh;
+  }
+
+  #html {
+    max-width: 10vh;
+  }
+
+  #js {
+    max-width: 11vh;
+  }
+
+  #mongoDb {
+    max-width: 23vh;
+  }
+
+  #vue {
+    max-width: 10vh;
+  }
+
+  #node {
+    max-width: 15vh;
   }
 </style>
