@@ -1,4 +1,9 @@
 module.exports = {
-  publicPath: '/calebsherfick.github.io',
-  outputDir: 'docs'
+  publicPath: undefined,
+  outputDir: 'docs',
+  assetsDir: undefined,
+  runtimeCompiler: undefined,
+  productionSourceMap: undefined,
+  parallel: undefined,
+  css: undefined
 }
