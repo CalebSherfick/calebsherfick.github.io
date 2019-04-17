@@ -6,7 +6,7 @@
       <div class="col-12">
         <div class="row">
           <a :class="$mq | mq({xs: 'navbar-brand nav-text col-12', sm: 'navbar-brand nav-text col-12', md: 'navbar-brand nav-text col-2', lg: 'navbar-brand nav-text col-2'})"
-            href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
+            href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=lRfwseq7DfS3VGq%2FOnO1zJJrd0o%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi8KsGJebKi9UBFLC8JjQAzeem1ETLiQ47qedvqfohwgsXgLZL5agYUbhl4lWdI"
             target="_blank">Caleb
             Sherfick
             Resume</a>
@@ -47,20 +47,23 @@
         <div class="about-color">
           <div class="row align-items-center justify-content-center">
             <div class="col-12 flex-column text-center py-4">
-              <h3 class="pb-1">ABOUT</h3>
+              <h3 class="pb-1 title">ABOUT</h3>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div class=" row justify-content-center">
             <div class="col-10">
               <p>I graduated from Boise State University with a Human Biology degree. In the midst of PA school
                 interviews, I realized I
                 wasn't passionate about the healthcare industry anymore and decided I needed a new challenge. This
                 realization fueled the
-                beginning of my journey in the field of Software Development. I started to study coding on my own and
+                beginning of my journey in the field of Software Development. I started to study coding on my own
+                and
                 taught myself HTML
-                and CSS using the many open source resources online. I quickly fell in love with coding and wanted to
+                and CSS using the many open source resources online. I quickly fell in love with coding and wanted
+                to
                 enhance my skills
-                at a faster pace than I would be able to accomplish on my own. That is when I decided to quit my job to
+                at a faster pace than I would be able to accomplish on my own. That is when I decided to quit my job
+                to
                 enroll in CodeWorks, where I have learned all the skills necessary to become a
                 Full Stack Software
                 Developer. With my studies at CodeWorks complete, I am now looking for work as a Full Stack Software
@@ -75,7 +78,7 @@
       <div class="col-12 skills-bg pb-4">
         <div class="row align-items-center justify-content-center pt-3">
           <div class="col-12 text-center">
-            <h3>SKILLS</h3>
+            <h3 class="title">SKILLS</h3>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -89,7 +92,7 @@
       <div class="col-12 portfolio-bg">
         <div class="row align-items-center justify-content-center pt-4">
           <div class="col-12 text-center">
-            <h3>PORTFOLIO</h3>
+            <h3 class="title">PORTFOLIO</h3>
           </div>
         </div>
         <div class="row justify-content-center  ">
@@ -121,7 +124,7 @@
               </p>
             </a>
             <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
-              href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=Cv%2F6Clm%2B4QB4KJQt3NxfQeb7iMU%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi9fcCJKrfzpEAVf39TjQA7LOi1SWbmFI7tK4_sf94ki5DldZP5agYUbhl4lWdI"
+              href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=lRfwseq7DfS3VGq%2FOnO1zJJrd0o%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi8KsGJebKi9UBFLC8JjQAzeem1ETLiQ47qedvqfohwgsXgLZL5agYUbhl4lWdI"
               target="_blank">
               <i
                 :class="$mq | mq({xs: 'fas fa-file-alt fa-2x pt-1', sm: 'fas fa-file-alt fa-2x pt-1', md: 'fas fa-file-alt fa-2x pt-2', lg: 'fas fa-file-alt fa-2x pt-2'})"></i>
@@ -198,9 +201,18 @@
 </script>
 
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Mitr|Questrial');
   /* * {
     outline: 1px red solid;
   } */
+
+  * {
+    font-family: 'Questrial', sans-serif;
+  }
+
+  .title {
+    font-family: 'Mitr', sans-serif;
+  }
 
   .navi {
     background-color: #343534;
@@ -312,53 +324,63 @@
   }
 
   #mySql {
-    max-width: 17vh;
-    min-width: 17vh;
+    /* max-width: 17vh;
+    min-width: 17vh; */
+    width: 100%;
 
   }
 
   #bootstrap {
-    max-width: 20vh;
-    max-width: 20vh;
+    /* max-width: 20vh;
+    max-width: 20vh; */
+    width: 100%;
   }
 
   #cs {
-    max-width: 9vh;
-    min-width: 9vh;
+    /* max-width: 9vh;
+    min-width: 9vh; */
+    width: 70%;
   }
 
   #css {
-    max-width: 12vh;
-    min-width: 12vh;
+    /* max-width: 12vh;
+    min-width: 12vh; */
+    width: 100%;
   }
 
   #git {
-    max-width: 15vh;
-    min-width: 15vh;
+    /* max-width: 15vh;
+    min-width: 15vh; */
+    width: 100%;
   }
 
   #html {
-    max-width: 10vh;
-    min-width: 10vh;
+    /* max-width: 10vh;
+    min-width: 10vh; */
+    width: 85%;
   }
 
   #js {
-    max-width: 11vh;
-    min-width: 11vh;
+    /* max-width: 11vh;
+    min-width: 11vh; */
+    width: 85%;
   }
 
   #mongoDb {
-    max-width: 23vh;
-    min-width: 23vh;
+    /* max-width: 23vh;
+    min-width: 23vh; */
+    width: 100%;
   }
 
   #vue {
-    max-width: 10vh;
-    min-width: 10vh;
+    /* max-width: 10vh;
+    min-width: 10vh; */
+    width: 70%;
   }
 
   #node {
-    max-width: 15vh;
-    min-width: 15vh;
+    /* max-width: 15vh;
+    min-width: 15vh; */
+    width: 100%;
   }
 </style>
