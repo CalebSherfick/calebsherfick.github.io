@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: undefined,
-  outputDir: 'docs',
+  outputDir: '../bin/Release/netcoreapp2.2/publish/wwwroot',
   assetsDir: undefined,
   runtimeCompiler: undefined,
   productionSourceMap: undefined,

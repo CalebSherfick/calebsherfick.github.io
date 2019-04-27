@@ -95,7 +95,7 @@
             <h3 class="title">PORTFOLIO</h3>
           </div>
         </div>
-        <div class="row justify-content-center  ">
+        <div class="row justify-content-around">
           <!-- INSERT PROJECT IMAGE MOEDEL HERE -->
           <project v-for="project in projects" :project="project"></project>
         </div>
@@ -160,8 +160,8 @@
   import inspire from '@/assets/Inspire.png'
   import bugReport from '@/assets/BugReport.png'
   import billboards from '@/assets/Billboards.png'
-  import poplarWide from '@/assets/PoplarWide.jpg'
-  import poplar from '@/assets/Poplar.jpg'
+  import poplar from '@/assets/PoplarWide.jpg'
+  import keepr from '@/assets/KeeprScreenshot.png'
 
   import Skill from "@/components/Skill.vue"
   import Project from "@/components/Project.vue"
@@ -186,8 +186,8 @@
           { url: inspire, id: "inspire", title: "Inspire", link: "https://calebsherfick.github.io/inspire/", desc: "Vanilla JavaScript homepage application. Includes a todo list and implements multiple APIs to draw in weather, photo, and a quote per page load." },
           { url: bugReport, id: "bugReport", title: "Bug Report", link: "https://calebsherfick.github.io/bug-report/", desc: "Created using Vue.js allowing users to report bugs, view details, post/flag comments, and close bugs." },
           { url: billboards, id: "billboards", title: "Billboards", link: "https://lnkd.in/eMUcpjK", desc: "(TEST ACCOUNT: EMAIL= test@test.com | PASSWORD= test123) Full Stack application, which allows users to get organized by adding lists to boards. Users are able to drag and drop tasks to different lists on the board. Incorporates user authentication, allowing users to sign in for private boards." },
-          { url: poplarWide, id: "poplarWide", title: "Poplar", link: "", desc: "(COMING SOON, CURRENTLY UNHOSTED) Full Stack polling application which allows users to vote on posts and express their opinion based on this/that and yes/no questions. Incorporates sockets to provide a unique chatroom for every post, as well as a photo cropping/ uploading tool and user authentication." },
-          // { url: poplar, id: "poplar", title: "Poplar", link: "", desc: "(COMING SOON, CURRENTLY UNHOSTED) Full Stack polling application which allows users to vote on posts and express their opinion based on this/that and yes/no questions. Incorporates sockets to provide a unique chatroom for every post, as well as a photo cropping/ uploading tool and user authentication." },
+          { url: keepr, id: "keepr", title: "Keepr", link: "https://calebkeepr.herokuapp.com/#/", desc: "Full Stack post keeping application similar to Pinterest. Front end written in JavaScript utilizing the Vue framework. Back end written in C#, connected to a mySQL database using Dapper. " },
+          { url: poplar, id: "poplar", title: "Poplar", link: "", desc: "(COMING SOON, CURRENTLY UNHOSTED) Full Stack polling application which allows users to vote on this/that and yes/no questions. Incorporates sockets to provide a unique chatroom for every post, as well as a photo cropping/ uploading tool. Written in JavaScript using Vue framework on the front end. Mongoose is used to connect Node.js server to a MongoDb database. " },
         ]
       }
     },

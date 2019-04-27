@@ -1,23 +1,24 @@
 <template>
-  <div
-    :class="$mq | mq({xs: 'col-12 imgContainer mt-3', sm: 'col-12 imgContainer mt-3', md: 'col-6 imgContainer mt-3', lg: 'col-6 imgContainer mt-3'})">
-    <a :href="project.link" target="_blank">
-      <img :src="project.url"
-        :class="$mq | mq({xs: 'project-img', sm: 'project-img', md: 'project-img', lg: 'project-img'})">
-      <div
-        :class="$mq | mq({xs: 'overlay-mobile row align-items-start', sm: 'overlay-mobile row align-items-start', md: 'overlay row align-items-start', lg: 'overlay row align-items-start'})">
-        <div class="col-12 text-div d-flex justify-content-center align-items-end">
-          <div
-            :class="$mq | mq({xs: 'text-mobile title-text-mobile', sm: 'text-mobile title-text-mobile', md: 'text title-text', lg: 'text title-text'})">
-            {{project.title}}</div>
-        </div>
-        <div class="col-12 text-div d-flex justify-content-center align-items-start">
-          <div :class="$mq | mq({xs: 'text-mobile', sm: 'text-mobile', md: 'text desc-text', lg: 'text desc-text'})">
-            {{project.desc}}
-          </div>
+  <div class="whole-project px-0"
+    :class="$mq | mq({xs: 'col-12 m-1', sm: 'col-12 m-1', md: ' col-5 mt-3', lg: ' col-5 mt-3'})">
+    <img class="projectImg" :src="project.url">
+
+    <div :class="$mq | mq({xs: 'overlay-mobile-top', sm: 'overlay-mobile-top', md: 'overlay-top', lg: 'overlay-top'})">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <p class="project-title" style="font-weight:750;">{{project.title}}</p>
         </div>
       </div>
-    </a>
+    </div>
+
+    <div
+      :class="$mq | mq({xs: 'overlay-mobile-bottom', sm: 'overlay-mobile-bottom', md: 'overlay-bottom', lg: 'overlay-bottom'})">
+      <p
+        :class="$mq | mq({xs: 'view-details-mobile', sm: 'view-details-mobile', md: 'view-details', lg: 'view-details'})">
+        {{project.desc}}</p>
+    </div>
+
+
   </div>
 </template>
 
@@ -35,41 +36,125 @@
 </script>
 
 <style>
-  .project-img {
+  .whole-project {
+    position: relative;
+    width: 100%;
+  }
+
+  .projectImg {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
   }
 
-  .overlay {
+  .projectImg:hover {
+    cursor: pointer;
+  }
+
+  .project-title {
+    color: white;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .view-details {
+    color: white;
+    width: 90%;
     position: absolute;
-    /* top: 0; */
+    text-align: center;
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+  }
+
+  .view-details-mobile {
+    color: white;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    font-size: 13px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .overlay-bottom {
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: 15px;
+    background-color: rgba(51, 51, 51, 0.568);
+    overflow: hidden;
+    width: 100%;
     height: 0;
-    width: 95.5%;
-    overflow: hidden;
-    /* opacity: 0; */
     transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.432);
   }
 
-  .overlay-mobile {
+  .overlay-top {
     position: absolute;
-    /* top: 0; */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2d3142;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .whole-project:hover .overlay-top {
+    height: 10%;
+    cursor: pointer;
+  }
+
+  .whole-project:hover .overlay-bottom {
+    height: 90%;
+    cursor: pointer;
+  }
+
+  .overlay-mobile-bottom {
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: 15px;
-    height: 100%;
-    width: 93%;
+    background-color: rgba(51, 51, 51, 0.568);
     overflow: hidden;
-    /* opacity: 0; */
+    width: 100%;
+    height: 85%;
     transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.432);
   }
+
+  .overlay-mobile-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2d3142;
+    overflow: hidden;
+    width: 100%;
+    height: 15%;
+    transition: .5s ease;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .imgContainer {
     position: relative;
