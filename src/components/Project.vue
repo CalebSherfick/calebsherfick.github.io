@@ -1,24 +1,26 @@
 <template>
   <div class="whole-project px-0"
     :class="$mq | mq({xs: 'col-12 m-1', sm: 'col-12 m-1', md: ' col-5 mt-3', lg: ' col-5 mt-3'})">
-    <img class="projectImg" :src="project.url">
+    <a :href="project.link" target="_blank">
+      <img class="projectImg" :src="project.url">
 
-    <div :class="$mq | mq({xs: 'overlay-mobile-top', sm: 'overlay-mobile-top', md: 'overlay-top', lg: 'overlay-top'})">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <p class="project-title" style="font-weight:750;">{{project.title}}</p>
+      <div
+        :class="$mq | mq({xs: 'overlay-mobile-top', sm: 'overlay-mobile-top', md: 'overlay-top', lg: 'overlay-top'})">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center justify-content-center">
+            <p class="project-title" style="font-weight:750;">{{project.title}}</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div
-      :class="$mq | mq({xs: 'overlay-mobile-bottom', sm: 'overlay-mobile-bottom', md: 'overlay-bottom', lg: 'overlay-bottom'})">
-      <p
-        :class="$mq | mq({xs: 'view-details-mobile', sm: 'view-details-mobile', md: 'view-details', lg: 'view-details'})">
-        {{project.desc}}</p>
-    </div>
+      <div
+        :class="$mq | mq({xs: 'overlay-mobile-bottom', sm: 'overlay-mobile-bottom', md: 'overlay-bottom', lg: 'overlay-bottom'})">
+        <p
+          :class="$mq | mq({xs: 'view-details-mobile', sm: 'view-details-mobile', md: 'view-details', lg: 'view-details'})">
+          {{project.desc}}</p>
+      </div>
 
-
+    </a>
   </div>
 </template>
 

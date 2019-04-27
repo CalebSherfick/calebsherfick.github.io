@@ -36,7 +36,9 @@
         </div>
         <div class="row justify-content-start">
           <div :class="$mq | mq({xs: 'col', sm: 'col', md: 'col-4', lg: 'col-3 d-flex justify-content-start'})">
-            <a class="btn button btn-lg btn-text" href="#portfolio" role="button">View Work</a>
+            <a class="btn button btn-lg btn-text" href="https://github.com/CalebSherfick" target="_blank"
+              role="button">View Work on
+              GitHub</a>
           </div>
         </div>
       </div>
@@ -114,6 +116,7 @@
                 :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
                 208.219.7635</p>
             </a>
+
             <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
               href="mailto:calebsherfick@gmail.com" target="_blank">
               <i
@@ -123,6 +126,7 @@
                 calebsherfick@gmail.com
               </p>
             </a>
+
             <a :class="$mq | mq({xs: 'col-12 text-center nav-text', sm: 'col-12 text-center nav-text', md: 'col-3 text-center nav-text', lg: 'col-3 text-center nav-text'})"
               href="https://media.licdn.com/media-proxy/ext?w=800&h=800&f=n&hash=lRfwseq7DfS3VGq%2FOnO1zJJrd0o%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi8KsGJebKi9UBFLC8JjQAzeem1ETLiQ47qedvqfohwgsXgLZL5agYUbhl4lWdI"
               target="_blank">
@@ -132,6 +136,7 @@
                 :class="$mq | mq({xs: 'footer-words py-1', sm: 'footer-words py-1', md: 'footer-words my-0 py-1', lg: 'footer-words my-0 py-1'})">
                 Resume</p>
             </a>
+
           </div>
         </div>
       </div>
